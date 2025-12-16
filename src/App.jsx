@@ -1,7 +1,8 @@
+import { useEffect } from 'react';
 import YouTube from 'react-youtube';
 
 function App() {
-  const viewCont = 24;
+  const viewCont = 20; // Number of YouTube videos to display
   const opts = {
     height: '300',
     width: '200',
@@ -18,6 +19,16 @@ function App() {
   const url2 = `https://youtu.be/yPNqvNdylX4`;
   const url3 = `https://youtu.be/pOGfp5ukHKM`;
   const video = `https://www.youtube.com/shorts/nyUfP6LfNYM?feature=share`
+
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      window.location.reload();
+    }, 45000);
+    return () => clearTimeout(timer);
+  }, []);
+
+
   return (
     <main>
       {/* video-1 */}

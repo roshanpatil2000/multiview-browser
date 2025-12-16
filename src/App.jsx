@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import YouTube from 'react-youtube';
 
 function App() {
-  const viewCont = 20; // Number of YouTube videos to display
+  const viewCont = 24; // Number of YouTube videos to display
   const opts = {
     height: '300',
     width: '200',

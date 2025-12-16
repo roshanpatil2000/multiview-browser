@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import YouTube from 'react-youtube';
 
 function App() {
-  const viewCont = 24; // Number of YouTube videos to display
+  const viewCont = 16; // Number of YouTube videos to display
   const opts = {
     height: '300',
     width: '200',
@@ -15,18 +15,31 @@ function App() {
       controls: 0
     },
   };
-  const url = `https://www.youtube.com/embed/nyUfP6LfNYM?autoplay=1&mute=1&loop=1&playlist=nyUfP6LfNYM&vq=small`
-  const url2 = `https://youtu.be/yPNqvNdylX4`;
-  const url3 = `https://youtu.be/pOGfp5ukHKM`;
-  const video = `https://www.youtube.com/shorts/nyUfP6LfNYM?feature=share`
 
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      window.location.reload();
-    }, 45000);
-    return () => clearTimeout(timer);
-  }, []);
+  const opts2 = {
+    height: '300',
+    width: '200',
+    playerVars: {
+      autoplay: 1,
+      mute: 1,
+      loop: 1,
+      playlist: 'fBK4hi2g0hg',
+      vq: 'small',
+      controls: 0
+    },
+  };
+
+  const short1 = `https://www.youtube.com/shorts/nyUfP6LfNYM?autoplay=1&mute=1&loop=1&vq=small`
+  const short2 = `https://www.youtube.com/embed/fBK4hi2g0hg?autoplay=1&mute=1&loop=1&vq=small`
+
+
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     window.location.reload();
+  //   }, 60000); // Reload the page every 60 seconds
+  //   return () => clearTimeout(timer);
+  // }, []);
 
 
   return (
@@ -46,10 +59,18 @@ function App() {
       ))} */}
 
 
-      {/* video-2 */}
+      {/* short-1 */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: '10px' }}>
         {Array.from({ length: viewCont }, (_, i) => (
           <YouTube key={i} opts={opts} />
+        ))}
+      </div>
+
+
+      {/* short-2*/}
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: '10px' }}>
+        {Array.from({ length: viewCont }, (_, i) => (
+          <YouTube key={i} opts={opts2} />
         ))}
       </div>
     </main>

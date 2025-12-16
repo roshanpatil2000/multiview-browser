@@ -1,7 +1,7 @@
 import YouTube from 'react-youtube';
 
 function App() {
-  const viewCont = 32;
+  const viewCont = 24;
   const opts = {
     height: '300',
     width: '200',

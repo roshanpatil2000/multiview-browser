@@ -60,14 +60,19 @@ function App() {
 
 
       {/* short-1 */}
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: '10px' }}>
+      {/* <div style={{ display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: '10px' }}>
         {Array.from({ length: viewCont }, (_, i) => (
           <YouTube key={i} opts={opts} />
         ))}
-      </div>
+      </div> */}
 
 
       {/* short-2*/}
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: '10px' }}>
+        {Array.from({ length: viewCont }, (_, i) => (
+          <YouTube key={i} opts={opts2} />
+        ))}
+      </div>
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: '10px' }}>
         {Array.from({ length: viewCont }, (_, i) => (
           <YouTube key={i} opts={opts2} />

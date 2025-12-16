@@ -24,14 +24,15 @@ function App() {
       autoplay: 1,
       mute: 1,
       loop: 1,
-      playlist: 'fBK4hi2g0hg',
+      playlist: 'RU0c1WRC9MI',
       vq: 'small',
       controls: 0
     },
   };
 
   const short1 = `https://www.youtube.com/shorts/nyUfP6LfNYM?autoplay=1&mute=1&loop=1&vq=small`
-  const short2 = `https://www.youtube.com/embed/fBK4hi2g0hg?autoplay=1&mute=1&loop=1&vq=small`
+  const short2 = `https://www.youtube.com/embed/RU0c1WRC9MI?autoplay=1&mute=1&loop=1&vq=small`
+
 
 
   useEffect(() => {

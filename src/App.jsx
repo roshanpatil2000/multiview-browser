@@ -24,14 +24,15 @@ function App() {
       autoplay: 1,
       mute: 1,
       loop: 1,
-      playlist: 'RU0c1WRC9MI',
+      // playlist: 'RU0c1WRC9MI',
+      playlist: 'uPv0Cfg31GU',
       vq: 'small',
       controls: 0
     },
   };
 
   const short1 = `https://www.youtube.com/shorts/nyUfP6LfNYM?autoplay=1&mute=1&loop=1&vq=small`
-  const short2 = `https://www.youtube.com/embed/RU0c1WRC9MI?autoplay=1&mute=1&loop=1&vq=small`
+  const short2 = `https://www.youtube.com/embed/uPv0Cfg31GU?autoplay=1&mute=1&loop=1&vq=small`
 
 
 
@@ -79,6 +80,9 @@ function App() {
           <YouTube key={i} opts={opts2} />
         ))}
       </div>
+
+      {/* <iframe width="456" height="811" src="https://www.youtube.com/embed/uPv0Cfg31GU" title="midnight lofi vibes ✨ study, code &amp; relax | #music #chill #lofi #lofihiphopbeats #lofibeats" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> */}
+
     </main>
   )
 }

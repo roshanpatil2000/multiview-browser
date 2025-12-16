@@ -34,12 +34,12 @@ function App() {
   const short2 = `https://www.youtube.com/embed/fBK4hi2g0hg?autoplay=1&mute=1&loop=1&vq=small`
 
 
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     window.location.reload();
-  //   }, 60000); // Reload the page every 60 seconds
-  //   return () => clearTimeout(timer);
-  // }, []);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      window.location.reload();
+    }, 60000); // Reload the page every 60 seconds
+    return () => clearTimeout(timer);
+  }, []);
 
 
   return (

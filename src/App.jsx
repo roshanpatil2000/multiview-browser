@@ -3,7 +3,7 @@ import YouTube from 'react-youtube';
 import Demo from './demo';
 
 function App() {
-  const viewCont = 16; // Number of YouTube videos to display
+  const viewCont = 8; // Number of YouTube videos to display
   const opts = {
     height: '300',
     width: '200',
@@ -11,7 +11,8 @@ function App() {
       autoplay: 1,
       mute: 1,
       loop: 1,
-      playlist: 'nyUfP6LfNYM',
+      // playlist: 'nyUfP6LfNYM',
+      playlist: 'yPNqvNdylX4',
       vq: 'small',
       controls: 0
     },
@@ -71,13 +72,14 @@ function App() {
         ))}
       </div> */}
 
-
-      {/* short-2*/}
+      {/* video-1*/}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: '10px' }}>
         {Array.from({ length: viewCont }, (_, i) => (
-          <YouTube key={i} opts={opts2} />
+          <YouTube key={i} opts={opts} />
         ))}
       </div>
+
+      {/* short-2*/}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: '10px' }}>
         {Array.from({ length: viewCont }, (_, i) => (
           <YouTube key={i} opts={opts2} />

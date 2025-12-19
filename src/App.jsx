@@ -41,7 +41,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       window.location.reload();
-    }, 60000); // Reload the page every 60 seconds
+    }, 300000); // Reload the page every 5 mins
     return () => clearTimeout(timer);
   }, []);
 

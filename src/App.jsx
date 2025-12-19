@@ -3,20 +3,6 @@ import YouTube from 'react-youtube';
 
 function App() {
   const viewCont = 16; // Number of YouTube videos to display
-  const opts = {
-    height: '300',
-    width: '200',
-    playerVars: {
-      autoplay: 1,
-      mute: 1,
-      loop: 1,
-      playlist: 'nyUfP6LfNYM',
-      vq: 'small',
-      controls: 0
-    },
-  };
-
-
   const opts2 = {
     height: '300',
     width: '200',
@@ -30,9 +16,6 @@ function App() {
       controls: 0
     },
   };
-
-  const short1 = `https://www.youtube.com/shorts/nyUfP6LfNYM?autoplay=1&mute=1&loop=1&vq=small`
-  const short2 = `https://www.youtube.com/embed/uPv0Cfg31GU?autoplay=1&mute=1&loop=1&vq=small`
 
 
 

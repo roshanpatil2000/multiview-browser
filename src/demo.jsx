@@ -25,7 +25,7 @@ const Demo = () => {
                             data.address.town ||
                             data.address.village,
                         country: data.address.country,
-                        state_district: data.address.state_district,
+                        state_district: data.address.state_district || data.address.state,
                         country: data.address.country,
                     });
                 });

@@ -8,7 +8,7 @@ function App() {
     height: '300',
     width: '200',
     playerVars: {
-      autoplay: 1,
+      // autoplay: 1,
       mute: 1,
       loop: 1,
       // playlist: 'nyUfP6LfNYM',
@@ -23,7 +23,7 @@ function App() {
     height: '300',
     width: '200',
     playerVars: {
-      autoplay: 1,
+      // autoplay: 1,
       mute: 1,
       loop: 1,
       // playlist: 'RU0c1WRC9MI',

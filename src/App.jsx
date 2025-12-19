@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import YouTube from 'react-youtube';
+import Demo from './demo';
 
 function App() {
   const viewCont = 16; // Number of YouTube videos to display
@@ -46,6 +47,8 @@ function App() {
 
   return (
     <main>
+
+      <Demo />
       {/* video-1 */}
       {/* {Array.from({ length: viewCont }, (_, i) => (
         <iframe

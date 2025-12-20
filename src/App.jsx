@@ -73,14 +73,14 @@ function App() {
       </div> */}
 
       {/* video-1*/}
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: '10px' }}>
+      <div className='myvideos' style={{ display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: '10px' }}>
         {Array.from({ length: viewCont }, (_, i) => (
           <YouTube key={i} opts={opts} />
         ))}
       </div>
 
       {/* short-2*/}
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: '10px' }}>
+      <div className='myvideos' style={{ display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: '10px' }}>
         {Array.from({ length: viewCont }, (_, i) => (
           <YouTube key={i} opts={opts2} />
         ))}
